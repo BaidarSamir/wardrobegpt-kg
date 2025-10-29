@@ -1,4 +1,5 @@
-# WardrobeGPT-KG (FashionNet)
+# WardrobeGPT-KG (FashionNet) Hybrid Knowledge Graph NLP System
+
 
 WardrobeGPT-KG is a natural language understanding toolkit that extracts fashion knowledge from plain text. It identifies clothing items, attributes (such as colors or styles), and demographic tendencies, and maps them into a Neo4j knowledge graph. The project combines an NLP pipeline (spaCy, NLTK) with a curated Neo4j graph enriched by semantic relationships (BERT, Word2Vec, GloVe, fastText), Wikidata, and WordNet.
 
