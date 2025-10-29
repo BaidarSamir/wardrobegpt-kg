@@ -3,12 +3,17 @@
 
 #import library from neo4j to access database from python
 from neo4j import GraphDatabase
+import os
 
+# Read Neo4j connection info from environment variables with sensible defaults
+# This allows you to configure the DB without editing the source. Set these in
+# PowerShell before running the app (examples below).
+NEO4J_URI = os.getenv('NEO4J_URI', 'bolt://127.0.0.1:7687')
+NEO4J_USER = os.getenv('NEO4J_USER', 'neo4j')
+NEO4J_PASSWORD = os.getenv('NEO4J_PASSWORD', 'Masterarbeit')
 
-#setup uri to access databse
-uri = "bolt://localhost:7687"
 #setup driver to access Graphdatabase
-driver = GraphDatabase.driver(uri, auth=("neo4j", "Masterarbeit"))
+driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
 #get all data in graphdatabase for given node
 def get_nodeData(token):

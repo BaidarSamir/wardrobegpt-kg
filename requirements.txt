@@ -1,0 +1,16 @@
+# WardrobeGPT-KG - Python Requirements
+# Install with: pip install -r requirements.txt
+
+# Core Dependencies
+neo4j>=5.0.0,<6.0.0          # Neo4j database driver
+spacy>=3.0.0,<4.0.0           # NLP library for text processing
+nltk>=3.8.0                   # Natural Language Toolkit
+
+# Spacy Language Model
+# Install separately after pip install:
+# python -m spacy download en_core_web_sm
+
+# Optional: For Multiclass-Classification
+# tensorflow>=2.10.0
+# transformers>=4.20.0
+# numpy>=1.23.0
