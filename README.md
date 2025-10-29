@@ -48,16 +48,9 @@ The knowledge base is loaded from a Neo4j dump and queried by the Python client 
 
 ## Quick Start
 
-Option A — Automated
+For first-time setup, follow the step-by-step guide in SETUP.md.
 
-```powershell
-# Clone and run automated setup on Windows PowerShell
-git clone https://github.com/BaidarSamir/wardrobegpt-kg.git
-cd wardrobegpt-kg
-./FULL_SETUP.ps1
-```
-
-Option B — Manual (see SETUP.md for full details)
+Summary of initial steps:
 
 ```powershell
 # Install Python dependencies
@@ -98,7 +91,6 @@ Run-time instructions and troubleshooting are in `USAGE.md`.
 
 - Setup guide: `SETUP.md`
 - Daily usage: `USAGE.md`
-- Automated setup: `FULL_SETUP.ps1`
 - Dependencies: `requirements.txt`
 
 A simple input example:
@@ -120,7 +112,6 @@ wardrobegpt-kg/
 ├── database-fashionNet/          # Graph.dump (Neo4j backup)
 ├── neo4j-docker/                 # Docker volumes (data, logs)
 ├── requirements.txt              # Python dependencies
-├── FULL_SETUP.ps1                # Automated setup script
 ├── SETUP.md                      # One-time setup guide
 ├── USAGE.md                      # Daily usage and troubleshooting
 └── README.md                     # This document
@@ -130,7 +121,7 @@ wardrobegpt-kg/
 
 - Installation: `SETUP.md`
 - Daily usage: `USAGE.md`
-- Quick reference: `QUICK_REFERENCE.md`
+ 
 
 ## Research Background
 
